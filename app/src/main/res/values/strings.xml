@@ -1,0 +1,246 @@
+<resources>
+    <string name="app_name">Pregnancy Guide App</string>
+
+    <!--                Splash Activity               -->
+    <string name="your">Your</string>
+    <string name="pregnancy_guide">Pregnancy Guide</string>
+    <string name="HFH">Holy Family Hospital</string>
+
+    <!--                Login Activity               -->
+    <string name="login"> LOGIN </string>
+    <string name="register"> REGISTER </string>
+    <string name="name"> NAME </string>
+    <string name="register_text_prompt"> Don\'t have an account? </string>
+    <string name="phone_num_login"> PHONE NUMBER </string>
+    <string name="sign_up"> <u> Sign Up </u> </string>
+
+    <!--                Register Activity               -->
+    <string name="RF"> Registration Form </string>
+    <string name="click_here"><u> Click here </u></string>
+    <string name="submit"> Submit </string>
+
+    <!--Mother's information-->
+    <string name="mother_info"> <b> <u> MOTHER\'S INFORMATION </u> </b> </string>
+    <string name="mother_name"><b> MOTHER\'S NAME </b></string>
+    <string name="DOB"><b> Date of Birth</b></string>
+    <string name="address"><b> ADDRESS</b></string>
+    <string name="phone_num"><b> PHONE NUMBER*</b></string>
+    <string name="email"><b> E-mail</b></string>
+    <string name="upload_P"><b> Upload Photo </b></string>
+    <string name="click_to_upload"> Click to upload </string>
+
+    <!--Baby's information-->
+    <string name="baby_info"> <b> <u> BABY\'S INFORMATION </u> </b> </string>
+    <string name="EDD"> <b> Estimated date of delivery(EDD) </b> </string>
+    <string name="gender"><b> Baby\'s Gender</b></string>
+    <string name="boy"> Boy </string>
+    <string name="girl"> Girl </string>
+    <string name="not_sure_gender">Not Sure</string>
+
+    <!--Hints for EditView-->
+    <string name="hint_Mname"> Enter mother\'s name </string>
+    <string name="hint_DOB"> dd/mm/yyyy </string>
+    <string name="hint_address"> Enter home address </string>
+    <string name="hint_phone_num"> Enter phone number </string>
+    <string name="hint_email"> Enter e-mail address </string>
+    <string name="hint_EDD"> Enter the EDD of your baby </string>
+
+    <!--Navigation menu-->
+    <string name="pregnancy">Pregnancy</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="birth_preparedness">Birth Preparedness</string>
+    <string name="postnatal_care">Postnatal Care</string>
+    <string name="breastfeeding">Breastfeeding</string>
+    <string name="family_planning">Family Planning</string>
+    <string name="male_involvement">Male Involvement</string>
+    <string name="account_details">Account Details</string>
+    <string name="logout"> Logout </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Profile name for the navigation menu-->
+    <string name="profile">Profile</string>
+
+    <!--Account Details-->
+    <string name="edd_short_form">EDD</string>
+    <string name="update">Update</string>
+
+    <!--Breastfeeding-->
+    <string name="breastfeeding_log">Newborn Feeding Log</string>
+    <string name="select_day">Select a day</string>
+    <string name="breastfeedingHint"><b>Feed 8 or more times</b></string>
+    <string name="signs_of_poor_feeding">Signs of Poor Feeding</string>
+    <string name="poor_breastfeeding_video">Poor breastfeeding video</string>
+    <string name="breast_care">Breast Care</string>
+    <string name="infant_feeding">Infant Feeding</string>
+
+    <!--List of days for the log-->
+    <string-array name="list_days">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+        <item>Day 5</item>
+        <item>Day 6</item>
+        <item>Day 7</item>
+        <item>Day 8</item>
+        <item>Day 9</item>
+        <item>Day 10</item>
+        <item>Day 11</item>
+        <item>Day 12</item>
+    </string-array>
+
+    <!--Time logs for breastfeeding records-->
+    <string name="oneAM">1am</string>
+    <string name="twoAM">2am</string>
+    <string name="threeAM">3am</string>
+    <string name="fourAM">4am</string>
+    <string name="fiveAM">5am</string>
+    <string name="sixAM">6am</string>
+    <string name="sevenAM">7am</string>
+    <string name="eightAM">8am</string>
+    <string name="nineAM">9am</string>
+    <string name="tenAM">10am</string>
+    <string name="elevenAM">11am</string>
+    <string name="twelveAM">12am</string>
+
+    <string name="onePM">1pm</string>
+    <string name="twoPM">2pm</string>
+    <string name="threePM">3pm</string>
+    <string name="fourPM">4pm</string>
+    <string name="fivePM">5pm</string>
+    <string name="sixPM">6pm</string>
+    <string name="sevenPM">7pm</string>
+    <string name="eightPM">8pm</string>
+    <string name="ninePM">9pm</string>
+    <string name="tenPM">10pm</string>
+    <string name="elevenPM">11pm</string>
+    <string name="twelvePM">12pm</string>
+
+    <!--Birth Preparedness-->
+    <string name="birth_plan_heading">My Birth Plan</string>
+    <string name="birth_plan_description">This birth plan outlines my preferences before, during, and after delivery; please respect them whenever possible. However, I understand that these are only guidelines and may need to be overruled as medical conditions change.</string>
+
+    <string name="background_details">Background Details</string>
+    <string name="labor">Labor</string>
+    <string name="delivery">Delivery</string>
+    <string name="after_delivery">After Delivery</string>
+
+    <string name="RB_others">Others</string>
+    <string name="birth_plan_others">Others:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="BD_name">Name:</string>
+    <string name="BD_due_date">Baby\'s due date:</string>
+    <string name="BD_medical_team_details">Medical team\'s name and contact details</string>
+    <string name="BD_doctor">Doctor:</string>
+    <string name="BD_midwife">Midwife:</string>
+    <string name="BD_doula">Doula:</string>
+    <string name="BD_pediatrician">Pediatrician:</string>
+    <string name="BD_hospital_address">Hospital address:</string>
+    <string name="BD_partner_details">Birth partner\'s name and details:</string>
+    <string name="BD_important_medical_issues">Important medical issues:</string>
+
+    <string name="labor_pref">During Labor, I prefer to be...</string>
+    <string name="labor_pref_1">Standing up</string>
+    <string name="labor_pref_2">Lying down</string>
+    <string name="labor_pref_3">Walking around</string>
+
+    <string name="pain_mgmt">When it comes to pain management, I would prefer...</string>
+    <string name="pain_mgmt_1">Not to use any</string>
+    <string name="pain_mgmt_2">Standard epidural</string>
+    <string name="pain_mgmt_3">Walking epidural</string>
+
+    <string name="labor_comfort_measures">Requested comfort measures and other preferences (e.g., quiet room, dimmed lights, relaxing music):</string>
+
+    <string name="delivery_pref">During delivery, I prefer to be...</string>
+    <string name="delivery_pref_1">Squatting</string>
+    <string name="delivery_pref_2">Standing</string>
+    <string name="delivery_pref_3">Semi-reclining</string>
+
+    <string name="delivery_partner_company">I would like my birth partner with me in the delivery room:</string>
+
+    <string name="delivery_episiotomy">I would like an episiotomy...</string>
+    <string name="delivery_episiotomy_1">Rather than risk a potential tear</string>
+    <string name="delivery_episiotomy_2">Only as a last resort</string>
+    <string name="delivery_episiotomy_3">Not performed, even if there is risk of a tear</string>
+
+    <string name="delivery_cesarean">Should I need a cesarean, I would like...</string>
+    <string name="delivery_cesarean_1">To stay conscious</string>
+    <string name="delivery_cesarean_2">My partner to be with me the entire time</string>
+    <string name="delivery_cesarean_3">To hold my baby right after delivery</string>
+    <string name="delivery_other_pref">Other preferences (e.g., avoid forceps, use a birthing stool, have mirror available so I can see my baby being born):</string>
+
+    <string name="AD_hold_baby">I\'d like to hold my baby skin-to-skin immediately after delivery:</string>
+    <string name="AD_delay_newborn_procedures">I want to delay newborn procedures (such as bathing and measuring) for the first hour so I can feed and bond with my baby:</string>
+    <string name="AD_explanation">I want all procedures and all medications explained to me before they are carried out:</string>
+
+    <string name="AD_keep_baby_pref">I’d prefer my baby to be kept with me...</string>
+    <string name="AD_keep_baby_pref_1">At all times</string>
+    <string name="AD_keep_baby_pref_2">During the day</string>
+    <string name="AD_keep_baby_pref_3">Only when I am awake</string>
+
+    <string name="AD_feed_baby_pref">When it comes to feeding my baby, I prefer to...</string>
+    <string name="AD_feed_baby_pref_1">Breastfeed</string>
+    <string name="AD_feed_baby_pref_2">Breastfeed, with the help of a lactation consultant</string>
+    <string name="AD_feed_baby_pref_3">Use formula</string>
+
+    <string name="AD_other_requests">Other requests:</string>
+
+    <!--Nutrition-->
+    <string name="nutrition_do_dont">Do\'s and Don\'t(s)</string>
+    <string name="exercise">Exercise</string>
+
+    <!--Pregnancy-->
+    <string name="stages_of_pregnancy">Stages of Pregnancy</string>
+    <string name="physical_discomfort">Physical Discomfort</string>
+    <string name="body_pain">Body Pain</string>
+
+    <!--Pregnancy Due Date Calculator-->
+    <string name="pregnancy_due_date_calculator">Pregnancy Due Date Calculator</string>
+    <string name="select_the_first_day_of_your_last_menstrual_period">Select the first day of your last menstrual period:</string>
+    <string name="hint_choose_a_date"> Choose a date</string>
+    <string name="get_date"> Get Date </string>
+
+    <!--Postnatal Care-->
+    <string name="postnatal_care_overview">Having a baby is exciting and rewarding, but sometimes you may feel like your needs get lost in the process. Don’t feel bad for taking time for yourself — this is a HUGE change! Your health and happiness are just as important as your baby’s.</string>
+    <string name="physical_health_and_well_being">Physical health and well-being</string>
+    <string name="physical_health_wellbeing_overview">Pregnancy and birth makes many changes to your body and it may take weeks or months to physically feel the way you did pre-pregnancy. Below is a list of common conditions and what you can do to relieve the symptoms and when to seek help from your healthcare centre or Midwife.</string>
+    <string name="health_concerns">Health Concerns</string>
+    <string name="health_concerns_overview">After having a baby there are certain signs and symptoms that can develop. It is vital that if you experience any of these you alert a healthcare professional. Whilst some symptoms maybe expected as a normal occurrence following birth some may indicate a more serious concern.</string>
+    <string name="postnatal_depression">Postnatal Depression</string>
+    <string name="baby_blues">Baby Blues</string>
+    <string name="postnatal_checkup">Postnatal Checkup</string>
+
+    <!--                 Family Planning                  -->
+
+    <string name="emergency_contraception">Emergency Contraception</string>
+
+    <!--Medical Options-->
+    <string name="medical_options">Medical Options</string>
+    <string name="mo_overview">Birth control is any medicine, device or method people use to prevent pregnancy. Types of birth control can include pills, intrauterine devices (IUD), vasectomy and condoms. Some forms of birth control work better than others.</string>
+    <string name="barrier_methods">Barrier Methods</string>
+    <string name="hormonal">Hormonal</string>
+    <string name="sterilization">Sterilization</string>
+
+    <string name="types_of_barrier_method">Types of Barrier Method</string>
+    <string name="types_of_hormonal">Types of Hormonal</string>
+    <string name="types_of_sterilization">Types of Sterilization</string>
+
+    <!--Natural Options-->
+    <string name="natural_options">Natural Options</string>
+    <string name="no_overview">Natural family planning is a method that teaches you at what time during your menstrual cycle you can have sex without contraception, with a reduced risk of pregnancy. The method is sometimes called fertility awareness.\n\n It works by plotting the times of your cycle when you’re fertile and when you’re not. You learn how to use and record fertility signals to identify when it’s safer to have sex. Fertility signals include your body temperature and cervical secretions (fluids or mucus). Natural family planning is more effective when more than one fertility signal is monitored.</string>
+    <string name="rhythm_method">Rhythm Method</string>
+    <string name="cervical_mucus_method">Cervical mucus method</string>
+    <string name="basal_body_temperature">Basal body temperature</string>
+
+    <!--                 Male Involvement                  -->
+    <string name="planning_a_pregnancy">Planning a Pregnancy</string>
+    <string name="getting_involved_in_a_pregnancy">Getting Involved in a Pregnancy</string>
+    <string name="youtube_videos_help">Here are some YouTube videos that you can access which will help you regarding male involvement in pregnancy.</string>
+    <string name="how_to_support_your_partner_during_pregnancy"><u>How to support your partner during pregnancy?</u></string>
+    <string name="your_first_few_days_as_a_parent"><u>Your first few days as a parent</u></string>
+
+</resources>

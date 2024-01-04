@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_breastfeedingLogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/breastfeeding_log"
+            android:textSize="30sp"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            app:drawableEndCompat="@drawable/ic_breastfeeding"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="serif"
+            tools:ignore="TextContrastCheck"
+            android:padding="10dp" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_breastfeedingLogTitle">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/select_day"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ss2"
+                    android:inputType="none"
+                    tools:ignore="LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_breastfeedingLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coordinatorLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_views"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView_breastfeedingHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/breastfeedingHint"
+                android:textSize="25sp" />
+
+            <GridLayout
+                android:id="@+id/gridLayout_AM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_breastfeedingHint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_12am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/twelveAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_1am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/oneAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_2am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/twoAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_3am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/threeAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_4am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/fourAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_5am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/fiveAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_6am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/sixAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_7am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/sevenAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_8am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/eightAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/nineAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_10am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/tenAM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_11am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="5dp"
+                    android:text="@string/elevenAM"
+                    android:textSize="22sp" />
+
+            </GridLayout>
+
+            <View
+                android:id="@+id/line_breastfeedingLog"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@+id/gridLayout_AM"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/ss2" />
+
+            <GridLayout
+                android:id="@+id/gridLayout_PM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_breastfeedingLog"
+
+                android:layout_centerHorizontal="true"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_12pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/twelvePM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_1pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/onePM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_2pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/twoPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_3pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/threePM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_4pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/fourPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_5pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/fivePM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_6pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/sixPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_7pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/sevenPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_8pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/eightPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_9pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/ninePM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_10pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/tenPM"
+                    android:textSize="22sp" />
+
+                <CheckedTextView
+                    android:id="@+id/checkedTV_11pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/check_indicator"
+                    android:padding="10dp"
+                    android:text="@string/elevenPM"
+                    android:textSize="22sp" />
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnUpdate_breastfeedingLog"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gridLayout_PM"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/ss2"
+                android:text="@string/submit"
+                app:cornerRadius="30dp"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

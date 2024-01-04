@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hormonal"
+            android:textAlignment="center"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewHormonalOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_image" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtTypesOfHormonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/types_of_hormonal"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_TypesOfHormonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/txtTypesOfHormonal"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHormonal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

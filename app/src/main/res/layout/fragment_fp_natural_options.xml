@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/natural_options"
+            android:textAlignment="center"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_NO_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/no_overview"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtRhythmMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/rhythm_method"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_RhythmMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/txtRhythmMethod"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewRhythmMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtCervicalMucusMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/cervical_mucus_method"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_CervicalMucusMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/txtCervicalMucusMethod"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewCervicalMucusMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtBasalBodyTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/basal_body_temperature"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_BasalBodyTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/txtBasalBodyTemp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewBasalBodyTemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

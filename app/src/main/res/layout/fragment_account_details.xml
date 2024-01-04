@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_mother_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background"
+            android:padding="15dp">
+
+            <!-- Mother's Information -->
+            <TextView
+                android:id="@+id/textView_mother_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/mother_info"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck"
+                android:padding="2dp" />
+
+            <!-- Mother's Profile Picture -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_profile_picture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/textView_mother_info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_female_user"
+                app:civ_border_color="@color/ss2"
+                app:civ_border_width="3dp"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- Mother's Name -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/circleImageView_profile_picture"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_mother_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_username" />
+
+                <TextView
+                    android:id="@+id/textView_mother_name_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Mother's Phone Number -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL_mothers_name"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_mother_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/phone_num"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/textView_mother_phone_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Mother's email address -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL_mothers_phone_num"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_mother_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/email"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_email" />
+
+                <TextView
+                    android:id="@+id/textView_mother_email_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Mother's home address -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL_mothers_email"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_mother_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/address"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_address" />
+
+                <TextView
+                    android:id="@+id/textView_mother_address_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Mother's Date of Birth -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL_mothers_address"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/textView_mother_DOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/DOB"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_calendar"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView_mother_DOB_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_baby_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout_mother_info"
+            android:background="@drawable/layout_background"
+            android:layout_marginTop="20dp"
+            android:padding="15dp">
+
+            <!-- Baby's Information -->
+            <TextView
+                android:id="@+id/textView_baby_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/baby_info"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck"
+                android:padding="2dp" />
+
+            <!-- Baby's EDD -->
+            <LinearLayout
+                android:id="@+id/LL_baby_EDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_baby_info"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_baby_EDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/edd_short_form"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_calendar"/>
+
+                <TextView
+                    android:id="@+id/textView_baby_EDD_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Baby's Gender -->
+            <LinearLayout
+                android:id="@+id/LL_baby_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL_baby_EDD"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5sp">
+                <TextView
+                    android:id="@+id/textView_baby_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/gender"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:drawableLeftCompat="@drawable/ic_baby"/>
+
+                <TextView
+                    android:id="@+id/textView_baby_gender_assigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Button to submit all the details -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout_baby_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ss2"
+            android:text="@string/update"
+            app:cornerRadius="30dp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

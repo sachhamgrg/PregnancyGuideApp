@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "591924545358",
+    "firebase_url": "https://pregnancy-guide-app-841c4-default-rtdb.firebaseio.com",
+    "project_id": "pregnancy-guide-app-841c4",
+    "storage_bucket": "pregnancy-guide-app-841c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591924545358:android:5b174f4cbc851bd8e5401f",
+        "android_client_info": {
+          "package_name": "com.example.pregnancyguideapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591924545358-obvnbece5lblopujoj6l57k1j677bovn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pregnancyguideapp",
+            "certificate_hash": "47d35f9e252d0e8ec6121616a126c40c6f5748c9"
+          }
+        },
+        {
+          "client_id": "591924545358-1nihoucs44c7sgblpgqtd8p69et5laa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVZqt4vVZJpSYTp0MGJ_aspnwRCDLQ-m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591924545358-1nihoucs44c7sgblpgqtd8p69et5laa3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/textView_your"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/your"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView_PG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_your"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="@string/pregnancy_guide"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/ss1"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView_PG"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/layout_background"
+            android:padding="30dp" >
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_views"
+                android:drawableStart="@drawable/ic_username"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/editText_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_name"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_views"
+                android:drawableStart="@drawable/ic_phone"
+                android:ems="10"
+                android:hint="@string/phone_num_login"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:minHeight="48dp"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_phone_num"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/ss2"
+                android:text="@string/login"
+                app:cornerRadius="30dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:layout_below="@+id/relativeLayout_login">
+
+            <TextView
+                android:id="@+id/textView_prompt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_text_prompt"
+                android:textSize="22sp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView_SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_bold_italic"
+                android:layout_marginRight="5dp"
+                android:text="@string/sign_up"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textColor="@color/ss2"
+                android:textSize="22sp"
+                android:focusable="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_HFH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/supermercado_one"
+        android:padding="10dp"
+        android:text="@string/HFH"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/ss2"
+        android:textSize="20sp" />
+
+</RelativeLayout>

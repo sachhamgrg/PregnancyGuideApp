@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Transition for Image 1-->
+    <Transition
+        motion:constraintSetEnd="@+id/endE1"
+        motion:constraintSetStart="@id/startE"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewExercise1" />
+    </Transition>
+
+    <!-- Transition for Image 2-->
+    <Transition
+        motion:constraintSetEnd="@+id/endE2"
+        motion:constraintSetStart="@id/startE"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewExercise2" />
+    </Transition>
+
+    <!-- Transition for Image 3-->
+    <Transition
+        motion:constraintSetEnd="@+id/endE3"
+        motion:constraintSetStart="@id/startE"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewExercise3" />
+    </Transition>
+
+    <!-- Transition for Image 4-->
+    <Transition
+        motion:constraintSetEnd="@+id/endE4"
+        motion:constraintSetStart="@id/startE"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewExercise4" />
+    </Transition>
+
+    <!-- Transition for Image 5-->
+    <Transition
+        motion:constraintSetEnd="@+id/endE5"
+        motion:constraintSetStart="@id/startE"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewExercise5" />
+    </Transition>
+
+    <!-- Constraint Sets -->
+
+    <ConstraintSet android:id="@+id/startE">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endE1">
+        <Constraint
+            android:id="@+id/imageViewExercise1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewExercise2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise4"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise5"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endE2">
+        <Constraint
+            android:id="@+id/imageViewExercise2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewExercise1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise4"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise5"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endE3">
+        <Constraint
+            android:id="@+id/imageViewExercise3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewExercise1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise4"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise5"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endE4">
+        <Constraint
+            android:id="@+id/imageViewExercise4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewExercise1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise5"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endE5">
+        <Constraint
+            android:id="@+id/imageViewExercise5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewExercise1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewExercise4"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+</MotionScene>

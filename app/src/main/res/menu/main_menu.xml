@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Dashboard">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_pregnancy"
+                        android:icon="@drawable/ic_pregnancy"
+                        android:title="@string/pregnancy" />
+
+                    <item
+                        android:id="@+id/nav_nutrition"
+                        android:icon="@drawable/ic_nutrition"
+                        android:title="@string/nutrition" />
+
+                    <item
+                        android:id="@+id/nav_birth_preparedness"
+                        android:icon="@drawable/ic_birth_preparedness"
+                        android:title="@string/birth_preparedness" />
+
+                    <item
+                        android:id="@+id/nav_postnatal_care"
+                        android:icon="@drawable/ic_postnatal_care"
+                        android:title="@string/postnatal_care" />
+
+                    <item
+                        android:id="@+id/nav_breastfeeding"
+                        android:icon="@drawable/ic_breastfeeding"
+                        android:title="@string/breastfeeding" />
+
+                    <item
+                        android:id="@+id/nav_family_planning"
+                        android:icon="@drawable/ic_family_planning"
+                        android:title="@string/family_planning" />
+
+                    <item
+                        android:id="@+id/nav_male_involvement"
+                        android:icon="@drawable/ic_male_involvement"
+                        android:title="@string/male_involvement" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="@string/profile">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_account_details"
+                        android:icon="@drawable/ic_female_user"
+                        android:title="@string/account_details" />
+                </group>
+
+                <group android:checkableBehavior="none">
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_logout"
+                        android:title="@string/logout" />
+                </group>
+            </menu>
+        </item>
+
+        <!-- Dummy invisible item to get an unchecked behaviour on the items that are listed on the menu -->
+        <item
+            android:id="@+id/menu_item_id_to_hide"
+            android:title=""
+            android:visible="false"/>
+    </group>
+
+</menu>

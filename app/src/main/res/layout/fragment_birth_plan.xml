@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_plan_heading"
+            android:textAlignment="center"
+            android:textColor="@color/ss2"
+            app:drawableStartCompat="@drawable/ic_love"
+            app:drawableEndCompat="@drawable/ic_checklist"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_BirthPlan_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_plan_description"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <!-- BACKGROUND DETAILS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/cardView_bg"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/textView_backgroundDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/background_details"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_pencil"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/bP_txtColor"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:fontFamily="serif"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="5dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageBtn_BackgroundDetailsSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_upload"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_weight="4"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_backgroundDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <!-- Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_name"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editText_BG_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="textPersonName"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Baby's due date -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_due_date"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+
+                        <EditText
+                            android:id="@+id/editText_BG_dueDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:autofillHints=""
+                            android:focusable="false"
+                            android:minHeight="48dp"
+                            android:padding="10dp"
+                            android:textSize="16sp"
+                            android:inputType="date" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/BD_medical_team_details"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+
+                    <!-- Medical team's details -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_doctor"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+
+                        <EditText
+                            android:id="@+id/editText_BG_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:inputType="textPersonName"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_midwife"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editText_BG_midwife"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="textPersonName"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_doula"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editText_BG_doula"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="textPersonName"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_pediatrician"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editText_BG_pediatrician"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="textPersonName"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/BD_hospital_address"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editText_BG_hospital_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="textPostalAddress"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Partner's details -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/BD_partner_details"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+
+                    <!-- Important medical issues -->
+                    <EditText
+                        android:id="@+id/editText_BG_birthPartnerDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="150"
+                        android:maxLines="3"
+                        android:textSize="16sp"
+                        tools:ignore="LabelFor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/BD_important_medical_issues"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+                    <EditText
+                        android:id="@+id/editText_BG_Imp_med_issues"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints=""
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="250"
+                        android:maxLines="4"
+                        android:textSize="16sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <!-- LABOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/cardView_bg"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/textView_Labor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/labor"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_labor"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/bP_txtColor"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:fontFamily="serif"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="5dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageBtn_LaborSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_upload"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_Labor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <!-- Labor's preference -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/labor_pref"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_LaborPref"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+                        <RadioButton
+                            android:id="@+id/LaborPref_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labor_pref_1"
+                            android:layout_weight="1"/>
+                        <RadioButton
+                            android:id="@+id/LaborPref_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labor_pref_2"
+                            android:layout_weight="1"/>
+                        <RadioButton
+                            android:id="@+id/LaborPref_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/labor_pref_3" />
+                        <RadioButton
+                            android:id="@+id/LaborPref_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Labor Preferences - Others -->
+                    <LinearLayout
+                        android:id="@+id/laborPrefLayout_Others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/birth_plan_others"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editTextLaborPrefOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="text"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Labor's pain management -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/pain_mgmt"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_PainManagement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/LaborPain_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pain_mgmt_1"/>
+                        <RadioButton
+                            android:id="@+id/LaborPain_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pain_mgmt_2"/>
+                        <RadioButton
+                            android:id="@+id/LaborPain_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pain_mgmt_3" />
+                        <RadioButton
+                            android:id="@+id/LaborPain_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Labor Pain management - Others -->
+                    <LinearLayout
+                        android:id="@+id/painManagementLayout_Others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/birth_plan_others"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/bP_txtColor"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:id="@+id/editTextPainManagementOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:inputType="text"
+                            android:autofillHints=""
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Comfort measures -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/labor_comfort_measures"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/bP_txtColor"
+                        android:padding="5dp"/>
+                    <EditText
+                        android:id="@+id/editTextRequestComfortMeasures"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints=""
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="100"
+                        android:maxLines="2"
+                        android:textSize="16sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <!-- DELIVERY -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/cardView_bg"
+                    android:weightSum="5">
+                    <TextView
+                        android:id="@+id/textView_Delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/delivery"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_delivery"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/bP_txtColor"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:fontFamily="serif"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="5dp"/>
+                    <ImageButton
+                        android:id="@+id/imageBtn_DeliverySubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_upload"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_Delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <!-- Delivery's preference -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/delivery_pref"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_DeliveryPref"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/DeliveryPref_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_pref_1" />
+
+                        <RadioButton
+                            android:id="@+id/DeliveryPref_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_pref_2" />
+
+                        <RadioButton
+                            android:id="@+id/DeliveryPref_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_pref_3" />
+
+                        <RadioButton
+                            android:id="@+id/DeliveryPref_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Delivery Preferences - Others -->
+                    <LinearLayout
+                        android:id="@+id/deliveryPrefOthers_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/birth_plan_others"
+                            android:textColor="@color/bP_txtColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextDeliveryPrefOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Birth partner's company -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/delivery_partner_company"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_BirthPartner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/BirthPartner_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/BirthPartner_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+
+                    <!-- Episiotomy -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/delivery_episiotomy"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_Episiotomy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/Episiotomy_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_episiotomy_1" />
+
+                        <RadioButton
+                            android:id="@+id/Episiotomy_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_episiotomy_2" />
+
+                        <RadioButton
+                            android:id="@+id/Episiotomy_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_episiotomy_3" />
+
+                        <RadioButton
+                            android:id="@+id/Episiotomy_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Episiotomy - Others -->
+                    <LinearLayout
+                        android:id="@+id/episiotomyLayout_Others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/birth_plan_others"
+                            android:textColor="@color/bP_txtColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextEpisiotomyOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Cesarean -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/delivery_cesarean"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_Cesarean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/Cesarean_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_cesarean_1" />
+
+                        <RadioButton
+                            android:id="@+id/Cesarean_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_cesarean_2" />
+
+                        <RadioButton
+                            android:id="@+id/Cesarean_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_cesarean_3" />
+
+                        <RadioButton
+                            android:id="@+id/Cesarean_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Cesarean - Others -->
+                    <LinearLayout
+                        android:id="@+id/cesareanLayout_Others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/birth_plan_others"
+                            android:textColor="@color/bP_txtColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextCesareanOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Other preferences -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/delivery_other_pref"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextDeliveryOtherPrefExtra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints=""
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="100"
+                        android:maxLines="2"
+                        android:textSize="16sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <!-- AFTER DELIVERY -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/cardView_bg"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/textView_AfterDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/after_delivery"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_after_delivery"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/bP_txtColor"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:fontFamily="serif"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="5dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageBtn_AfterDeliverySubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_upload"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_AfterDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <!-- Baby hold after delivery -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_hold_baby"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_holdBaby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <RadioButton
+                            android:id="@+id/holdBaby_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+                        <RadioButton
+                            android:id="@+id/holdBaby_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+
+                    <!-- Delay newborn procedures -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_delay_newborn_procedures"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_delayNewBornProcedures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <RadioButton
+                            android:id="@+id/delayP_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+                        <RadioButton
+                            android:id="@+id/delayP_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+
+                    <!-- After Delivery Explanation -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_explanation"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_AD_med_explanation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/Explanation_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/Explanation_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
+
+                    <!-- Keeping baby preference -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_keep_baby_pref"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_keepBabyPref"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/keepBabyPref_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_keep_baby_pref_1" />
+                        <RadioButton
+                            android:id="@+id/keepBabyPref_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_keep_baby_pref_2" />
+                        <RadioButton
+                            android:id="@+id/keepBabyPref_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_keep_baby_pref_3" />
+                        <RadioButton
+                            android:id="@+id/keepBabyPref_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RB_others" />
+                    </RadioGroup>
+
+                    <!-- Keep Baby preferences - Others -->
+                    <LinearLayout
+                        android:id="@+id/keepBabyPrefLayout_Others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/birth_plan_others"
+                            android:textColor="@color/bP_txtColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextKeepBabyPrefOthers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </LinearLayout>
+
+                    <!-- Feeding baby preference -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_feed_baby_pref"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_feedBabyPref"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/feedBabyPref_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_feed_baby_pref_1" />
+                        <RadioButton
+                            android:id="@+id/feedBabyPref_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_feed_baby_pref_2" />
+                        <RadioButton
+                            android:id="@+id/feedBabyPref_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AD_feed_baby_pref_3" />
+                    </RadioGroup>
+
+                    <!-- Other requests -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/AD_other_requests"
+                        android:textColor="@color/bP_txtColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextADOtherRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints=""
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="250"
+                        android:maxLines="4"
+                        android:textSize="16sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

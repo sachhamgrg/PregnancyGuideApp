@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/postnatal_care"
+            android:textColor="@color/ss2"
+            app:drawableStartCompat="@drawable/ic_love"
+            app:drawableEndCompat="@drawable/ic_postnatal_care"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txtViewPC_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/postnatal_care_overview"
+            android:textColor="@color/ss2"
+            android:background="@drawable/border_views"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPhysicalHealthAndWellbeing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/physical_health_and_well_being"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_PhysicalHealthAndWellbeing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtViewPHandW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/physical_health_wellbeing_overview"
+                        android:textColor="@color/ss2"
+                        android:textSize="16sp"
+                        android:fontFamily="serif"
+                        android:padding="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPhysicalHealthAndWellbeing1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPhysicalHealthAndWellbeing2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPhysicalHealthAndWellbeing3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHealthConcerns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/health_concerns"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_HealthConcerns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtViewHC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/health_concerns_overview"
+                        android:textColor="@color/ss2"
+                        android:textSize="16sp"
+                        android:fontFamily="serif"
+                        android:padding="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewHealthConcerns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPostnatalDepression"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/postnatal_depression"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_PostnatalDepression"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewPostnatalDepression1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPostnatalDepression2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBabyBlues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/baby_blues"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_BabyBlues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewBabyBlues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/ss2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPostnatalCheckup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardView_bg"
+                    android:text="@string/postnatal_checkup"
+                    android:gravity="center"
+                    android:textColor="@color/bP_txtColor"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:fontFamily="serif"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_PostnatalCheckup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewPostnatalCheckup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_image" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--App Theme-->
+    <color name="splash_theme">#A5D1F2</color>
+    <!--Splash Screen text colors-->
+    <color name="ss1">#1667A8</color>
+    <color name="ss2">#0D6063</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#09887C</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--EditText box background color-->
+    <color name="light_grey">#D5CCCC</color>
+
+    <!--Toolbar color-->
+    <color name="toolbar_bg">#4A80A6</color>
+
+    <!--Birth plan bg color-->
+    <color name="cardView_bg">#C8E6E6</color>
+    <color name="bP_txtColor">#418C8B</color>
+
+</resources>
+
+

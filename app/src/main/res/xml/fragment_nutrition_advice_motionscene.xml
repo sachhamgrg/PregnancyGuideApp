@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Transition for Image 1-->
+    <Transition
+        motion:constraintSetEnd="@+id/endN1"
+        motion:constraintSetStart="@id/startN"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewNutrition1" />
+    </Transition>
+
+    <!-- Transition for Image 2-->
+    <Transition
+        motion:constraintSetEnd="@+id/endN2"
+        motion:constraintSetStart="@id/startN"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewNutrition2" />
+    </Transition>
+
+    <!-- Transition for Image 3-->
+    <Transition
+        motion:constraintSetEnd="@+id/endN3"
+        motion:constraintSetStart="@id/startN"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewNutrition3" />
+    </Transition>
+
+    <!-- Transition for Image 4-->
+    <Transition
+        motion:constraintSetEnd="@+id/endN4"
+        motion:constraintSetStart="@id/startN"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageViewNutrition4" />
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/startN">
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/endN1">
+        <Constraint
+            android:id="@+id/imageViewNutrition1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition4"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endN2">
+        <Constraint
+            android:id="@+id/imageViewNutrition2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewNutrition1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition3"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition4"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            motion:layout_editor_absoluteY="355dp"
+            android:layout_height="19dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endN3">
+        <Constraint
+            android:id="@+id/imageViewNutrition3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewNutrition1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition4"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endN4">
+        <Constraint
+            android:id="@+id/imageViewNutrition4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/imageViewNutrition1"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition2"
+            android:visibility="invisible"/>
+        <Constraint
+            android:id="@+id/imageViewNutrition3"
+            android:visibility="invisible"/>
+    </ConstraintSet>
+</MotionScene>

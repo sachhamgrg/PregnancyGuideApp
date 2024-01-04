@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayoutNutrition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        android:padding="10dp"
+        app:layoutDescription="@xml/fragment_nutrition_advice_motionscene">
+
+        <TextView
+            android:id="@+id/textView_NutritionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_views"
+            android:drawablePadding="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/nutrition_do_dont"
+            android:textColor="@color/ss2"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_check"
+            app:drawableEndCompat="@drawable/ic_dont"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="9dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <ImageView
+            android:id="@+id/imageViewNutrition1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_image"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/imageViewNutrition2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <ImageView
+            android:id="@+id/imageViewNutrition2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_image"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewNutrition1"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <ImageView
+            android:id="@+id/imageViewNutrition3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/imageViewNutrition4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewNutrition1" />
+
+        <ImageView
+            android:id="@+id/imageViewNutrition4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewNutrition3"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewNutrition2" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+</RelativeLayout>

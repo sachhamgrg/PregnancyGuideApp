@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/pregnancy_due_date_calculator"
+        android:textAlignment="center"
+        android:textColor="@color/ss2"
+        app:drawableStartCompat="@drawable/ic_love"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="serif"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_first_day_of_your_last_menstrual_period"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck"
+        android:padding="3dp"/>
+
+    <EditText
+        android:id="@+id/editText_date_menstrual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_views"
+        android:hint="@string/hint_choose_a_date"
+        android:inputType="date"
+        android:padding="6dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:focusable="false"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_get_calcDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/get_date"/>
+
+</LinearLayout>

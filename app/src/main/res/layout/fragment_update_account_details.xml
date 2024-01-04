@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_mother_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background"
+            android:padding="15dp">
+
+            <!-- Mother's Information -->
+            <TextView
+                android:id="@+id/textView_mother_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mother_info"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck"
+                android:padding="2dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CL_uploadPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textView_mother_info">
+
+                <!-- Mother's Profile Picture -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView_profile_picture_UAD"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/ic_female_user"
+                    app:civ_border_color="@color/ss2"
+                    app:civ_border_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:ignore="ImageContrastCheck" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton_insertImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_image"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/circleImageView_profile_picture_UAD"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Mother's Phone Number -->
+            <LinearLayout
+                android:id="@+id/LL_mothers_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CL_uploadPP"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView_mother_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/phone_num"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:drawableLeftCompat="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/textView_mother_phone_UAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Mother's Name -->
+            <TextView
+                android:id="@+id/textView_mother_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_mothers_phone_num"
+                android:layout_marginTop="5dp"
+                android:text="@string/name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                app:drawableLeftCompat="@drawable/ic_username" />
+
+            <EditText
+                android:id="@+id/editText_mother_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_mother_name"
+                android:autofillHints=""
+                android:background="@drawable/border_views"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+            <!-- Mother's e-mail address -->
+            <TextView
+                android:id="@+id/textView_mother_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_mother_name"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/email"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:drawableLeftCompat="@drawable/ic_email"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/editText_mother_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_mother_email"
+                android:autofillHints=""
+                android:background="@drawable/border_views"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <!-- Mother's home address -->
+            <TextView
+                android:id="@+id/textView_mother_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_mother_email"
+                android:layout_marginTop="5dp"
+                android:text="@string/address"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                app:drawableLeftCompat="@drawable/ic_address" />
+
+            <EditText
+                android:id="@+id/editText_mother_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_mother_address"
+                android:autofillHints=""
+                android:background="@drawable/border_views"
+                android:hint="@string/hint_address"
+                android:inputType="textPostalAddress"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <!-- Mother's date of birth -->
+            <TextView
+                android:id="@+id/textView_mother_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_mother_address"
+                android:layout_marginTop="5dp"
+                android:text="@string/DOB"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                app:drawableLeftCompat="@drawable/ic_calendar" />
+
+            <EditText
+                android:id="@+id/editText_mother_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_mother_DOB"
+                android:autofillHints=""
+                android:background="@drawable/border_views"
+                android:focusable="false"
+                android:hint="@string/hint_DOB"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_baby_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout_mother_info"
+            android:background="@drawable/layout_background"
+            android:layout_marginTop="20dp"
+            android:padding="15dp">
+
+            <!-- Baby's Information -->
+            <TextView
+                android:id="@+id/textView_baby_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/baby_info"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck"
+                android:padding="2dp" />
+
+            <!-- Baby's EDD -->
+            <TextView
+                android:id="@+id/textView_baby_EDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_baby_info"
+                android:text="@string/EDD"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="5dp"
+                app:drawableLeftCompat="@drawable/ic_calendar"/>
+
+            <EditText
+                android:id="@+id/editText_baby_EDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_baby_EDD"
+                android:autofillHints=""
+                android:background="@drawable/border_views"
+                android:focusable="false"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/LL_ask_EDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/editText_baby_EDD">
+
+                <TextView
+                    android:id="@+id/textView_prompt_ask_EDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't know?"
+                    android:textSize="18sp"
+                    android:padding="3dp"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView_click_ask_EDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:text="@string/click_here"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:textColor="@color/ss2"
+                    android:textSize="18sp"
+                    android:padding="3dp"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- Baby's gender -->
+            <TextView
+                android:id="@+id/textView_baby_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_ask_EDD"
+                android:text="@string/gender"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                app:drawableLeftCompat="@drawable/ic_baby"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_baby_gender">
+
+                <!-- Buttons to select a gender for a baby -->
+                <RadioGroup
+                    android:id="@+id/radioGroup_baby_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+                    <RadioButton
+                        android:id="@+id/RB_Male_UAD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="@string/boy"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_male"
+                        android:drawablePadding="5dp"
+                        android:background="@drawable/border_views" />
+                    <RadioButton
+                        android:id="@+id/RB_Female_UAD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="@string/girl"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_female"
+                        android:drawablePadding="5dp"
+                        android:background="@drawable/border_views" />
+                    <RadioButton
+                        android:id="@+id/RB_NotSure_UAD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Not Sure"
+                        android:textSize="18sp"
+                        android:background="@drawable/border_views" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!-- Button to update all the details -->
+        <Button
+            android:id="@+id/btnSubmit_updateAD"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout_baby_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ss2"
+            android:text="@string/submit"
+            app:cornerRadius="30dp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+</ScrollView>
